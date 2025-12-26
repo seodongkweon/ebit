@@ -12,8 +12,4 @@ RUN apt-get update && apt-get install -y \
 RUN python3 -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 RUN pip install --no-cache-dir \
-    pip==24.0 \
-    pytest==8.4.1 \
-    pluggy==1.6.0 \
-    packaging==24.2 \
-    iniconfig==2.0.0
+    pip==24.0
